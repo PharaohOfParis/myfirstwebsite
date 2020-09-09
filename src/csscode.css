@@ -1,0 +1,40 @@
+header {
+    background-color:#cf4747;
+}
+
+#try_out{
+    background-color:#cf4747;
+    color: white;
+    font: arial, sans-serif;
+    text-align: center;
+}
+
+#quote{
+    background-color: #3a3e64;
+    color: white;
+}
+
+footer{
+    background-color: #0b0529;
+}
+
+.col-lg-4{
+    padding: 50px;
+}
+
+i{
+    color: #cf4747
+}
+
+.description{
+    color: #6c757d
+}
+
+/* p{
+    margin: 10px;
+} */
+
+/* a:hover{
+    font-weight:bold;
+    text-decoration:underline;
+}  */
