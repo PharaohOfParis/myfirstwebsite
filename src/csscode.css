@@ -1,5 +1,6 @@
 header {
     background-color:#cf4747;
+    color: white;
 }
 
 #try_out{
@@ -9,32 +10,35 @@ header {
     text-align: center;
 }
 
-#quote{
-    background-color: #3a3e64;
-    color: white;
-}
-
-footer{
-    background-color: #0b0529;
-}
-
-.col-lg-4{
-    padding: 50px;
-}
-
 i{
     color: #cf4747
 }
 
 .description{
-    color: #6c757d
+    color: #6c757d;
+    font-size: 17px;
+    line-height: 32px;
 }
 
-/* p{
-    margin: 10px;
-} */
+#quote{
+    background-color: #3a3e64;
+    color: white;
+    font: arial, sans-serif;
+}
 
-/* a:hover{
-    font-weight:bold;
-    text-decoration:underline;
-}  */
+footer{
+    background-color: #1b1d24;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
