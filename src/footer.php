@@ -10,7 +10,7 @@
         <li class="list-inline-item mx-2">© 2020 Bamzooka ™</li>
     </ul>
     <ul class="list-inline mt-5">
-        <li class="list-inline-item mx-2"><a href="metadot.php"><img src="../images/metadot_logo.png" alt="Metadot logo"
+        <li class="list-inline-item mx-2"><a href="metadot.php"><img src="/images/metadot_logo.png" alt="Metadot logo"
                     width="170px"></a></li>
         <li class="list-inline-item mx-2"><a href="metadot.php">Bamzooka ™ is a product of Metadot.</a></li>
     </ul>

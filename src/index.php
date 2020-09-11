@@ -7,7 +7,7 @@
     <meta name="keywords" content="organization, scheduling, teamwork, checklists " />
     <meta name="author" content="Mohamed Abdelkoddous" />
     <title>Bamzooka | Home</title>
-    <link rel="stylesheet" type="text/css" href="csscode.css" />
+    <link rel="stylesheet" type="text/css" href="src/csscode.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/87d1c020bf.js" crossorigin="anonymous"></script>
