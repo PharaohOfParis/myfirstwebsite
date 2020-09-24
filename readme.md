@@ -4,12 +4,12 @@ Hello, I am learning how to use Bootstrap efficiently. My first job is to redo t
 
 ## Usage
 
-There are three folders and two files :
+There are three folders and one main file :
 - the Images folder with the two logos and the three Fontawesome images;
 - the Sources folder with the PHP files (index, header and footer) and the CSS page;
 - the Public folder with all the files needed for the deployment on Firebase;
-- the firebase json file with the settings for the Firebase deployment;
-- the firebaserc file.
+- the firebase json file with the settings for the Firebase deployment.
+
 
 
 ## Deployment
@@ -56,7 +56,7 @@ Finally, after finishing working, to stop the Apache server, type:
 ```bash
 sudo /etc/init.d/apache2 stop
 ```
-### lobal with firebase:
+### global with firebase:
 
 Go to your browser and type in the URL one of the two following URL:
 - https://bamzooka-copy.web.app/
