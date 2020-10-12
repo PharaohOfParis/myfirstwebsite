@@ -1,44 +1,48 @@
 header {
-    background-color:#cf4747;
+    background-color: #cf4747;
     color: white;
 }
 
-#try_out{
-    background-color:#cf4747;
+#try_out {
+    background-color: #cf4747;
     color: white;
     font: arial, sans-serif;
     text-align: center;
 }
 
-i{
+i {
     color: #cf4747
 }
 
-.description{
+.description {
     color: #6c757d;
     font-size: 17px;
     line-height: 32px;
 }
 
-#quote{
+#quote {
     background-color: #3a3e64;
     color: white;
     font: arial, sans-serif;
 }
 
-footer{
+footer {
     background-color: #1b1d24;
     color: white;
 }
 
-a{
+a {
     color: white;
 }
 
-a:visited{
+a:visited {
     color: white;
 }
 
-a:hover{
+a:hover {
     color: white;
+}
+
+#navbarCollapse {
+    color: green;
 }
