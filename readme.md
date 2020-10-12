@@ -1,72 +1,107 @@
 # My version of Bamzooka website
 
-Hello, I am learning how to use Bootstrap efficiently. My first job is to redo the existing Bamzooka web page (https://bamzooka.com/) with my tools.
+## Description
 
-## Usage
+Hello, I am learning how to use Bootstrap efficiently. My first job is to redo the existing Bamzooka web page (https://bamzooka.com/) with my tools: HTML, CSS, PHP, Bootstrap. Then I must host it on Firebase. 
 
-There are three folders and one main file :
-- the Images folder with the two logos and the three Fontawesome images;
-- the Sources folder with the PHP files (index, header and footer) and the CSS page;
-- the Public folder with all the files needed for the deployment on Firebase;
-- the firebase json file with the settings for the Firebase deployment.
-
-
-
-## Deployment
-
-I did three ways of deployment (two locals and one global):
-
-### local with PHP: 
+## Installation
 
 First install PHP:
 ```bash
 sudo apt install php
 ```
-Then go to the repertory containing "src" and "images" and type:
+Then install Apache:
+```bash
+sudo apt-get install apache2
+```
+Finally install the Firebase CLI:
+```bash
+curl -sL https://firebase.tools | bash
+```
+NB: For more details, see: https://firebase.google.com/docs/hosting/quickstart .
+
+## Getting Started
+
+### With Apache:
+
+Put your website folder in the following repertory: `/var/www/html` .
+
+### With Firebase:
+
+Go to your repertory above `src` and `images`  and type:
+```bash
+firebase init hosting
+```
+Then follow the instructions.
+
+## Usage
+
+To edit the code, go to the `src` folder, and then you can modify either the header(`header.php`), footer(`footer.php`), or the main page (`index.php`). 
+To add logos or images, put them in the `images` folder. 
+To see your changes, deploy your website in local either with PHP or with Apache. To do this, read the `Deployment` section below.
+When your website is ready to be shown to the World Wide Web, put the `src` and `images` folders in the `public` folder.
+
+## Deployment
+
+I did three ways of deployment (2 locals and 1 global):
+
+### local with PHP: 
+
+First start the PHP server in the repertory above `src` and `images` by typing in a shell:
 ```bash
 php -S localhost:8000
 ```
-Then finish by going to your browser and type in the URL : http://localhost:8000/src
+Then go to your browser and type in the URL : http://localhost:8000/src .
 
 Finally, after finishing working, to stop the PHP server, do Ctrl-C.
 
 ### local with Apache:
 
-First install Apache:
-```bash
-sudo apt-get install apache2
-``` 
-Then copy the repertory containing "src" and "images" and paste it to the following folder : /var/www/html .
-
-Then start the Apache server by typing: 
+First start the Apache server by typing in a shell one of the 3 following commands: 
 ```bash
 sudo /etc/init.d/apache2 start
 ```
-Then go to your browser and type in the URL : http://XXX/YYY/src/
- where:
-- XXX is your IP address;
-- YYY is the name of your repertory containing "src" and "images".
+```bash
+sudo service apache2 start
+```
+or via systemd for Debian/Ubuntu Linux users:
+```bash
+sudo systemctl start apache2.service
+```
 
-To know your IP adress, type: 
+Then go to your browser and type in the URL: http://{ipAdress}/{repertory}/src/
+ where:
+- {ipAdress} is your IP address;
+- {repertory} is the name of your repertory containing "src" and "images" within the `/var/www/html` folder.
+
+To know your IP address, you can type in a shell: 
 ```bash
  hostname -I
 ```
+Your IP address is the first group of numbers.
 
 Finally, after finishing working, to stop the Apache server, type:
 ```bash
 sudo /etc/init.d/apache2 stop
 ```
-### global with firebase:
+```bash
+sudo service apache2 stop
+```
+or via systemd for Debian/Ubuntu Linux users:
+```bash
+sudo systemctl stop apache2.service
+```
+### global with Firebase:
 
-Go to your browser and type in the URL one of the two following URL:
+After finishing working in local, to deploy the website in global on Firebase, type:
+```bash
+firebase deploy --only hosting
+```
+
+Then go to your browser and type in the URL one of the 2 following URL:
+
 - https://bamzooka-copy.web.app/
 - https://bamzooka-copy.firebaseapp.com/
 
-## TODO
-
-Re-organize the web code for the smartphone mobile display. 
-
-## Last Update day:
-
-09/24/20
+NB: If your work hasn't changed, you don't need to do the first step the next time you want to see your website. 
 
