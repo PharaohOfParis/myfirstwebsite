@@ -84,7 +84,7 @@ sudo systemctl start apache2.service
 Your IP address is the first group of numbers.
 
 - NB2: If you want to write a **specific URL** (e.g. `pharaohofparis.com`) to have your localhost website (instead of `http://{ipAdress}/{repertory}`), do the following:
-1.  Go to the repertory `/etc/apache2/sites-available/` and create a new file named `pharaohofparis.com.conf` in which you must insert:
+  1. Go to the repertory `/etc/apache2/sites-available/` and create a new file named `pharaohofparis.com.conf` in which you must insert:
 ```
 <VirtualHost *:80>
     ServerName pharaohofparis.com
@@ -98,12 +98,12 @@ Your IP address is the first group of numbers.
     </Directory>
 </VirtualHost>
 ```
-2.  Activate the virtual host by typing:
+  2. Activate the virtual host by typing:
 ```bash
 sudo a2ensite pharaohofparis.com.conf
 sudo service apache2 reload
 ```
-3.  Edit the `/etc/hosts` file by adding the line:
+  3. Edit the `/etc/hosts` file by adding the line:
 ```
 127.0.0.1       pharaohofparis.com
 ```
@@ -144,9 +144,9 @@ Any contributions or even suggestions are **greatly appreciated**. To contribute
 ## Authors and acknowledgment
 
 - Author:
--  Mohamed Abdelkoddous - mohamed.abdelkoddous@metadot.com
+  - Mohamed Abdelkoddous - mohamed.abdelkoddous@metadot.com
 
 - Acknowledgments: 
--  Daniel Guermeur - https://github.com/supercobra
--  Ahmed Loudghiri - https://github.com/Mubramaj
+  - Daniel Guermeur - https://github.com/supercobra
+  - Ahmed Loudghiri - https://github.com/Mubramaj
 
