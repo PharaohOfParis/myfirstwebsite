@@ -1,10 +1,10 @@
 # My version of Bamzooka website
 
-## Description
+## 1. Description
 
 Hello, I'm learning how to use **Bootstrap efficiently**. My first job is to redo the existing **Bamzooka Web Page** (https://bamzooka.com/) with my tools: **HTML, CSS, PHP, Bootstrap**. Then I must host it on **Firebase**. 
 
-## Installation
+## 2. Installation
 
 * First install **PHP**:
  ``` bash
@@ -22,13 +22,13 @@ Hello, I'm learning how to use **Bootstrap efficiently**. My first job is to red
  ```
  NB: For more details about Firebase configuration, see: https://firebase.google.com/docs/hosting/quickstart .
 
-## Getting Started
+## 3. Getting Started
 
-### with Apache:
+### a) With Apache:
 
 Put your website folder in the following repertory: `/var/www/html` .
 
-### with Firebase hosting:
+### b) With Firebase hosting:
 
 Go to your repertory above `src` and `images` and type:
 ``` bash
@@ -36,7 +36,7 @@ firebase init hosting
 ```
 Then follow the instructions.
 
-## Usage
+## 4. Usage
 
 * To edit the code, go to the `src` folder, and then you can modify either the header( `header.php` ), footer( `footer.php` ), or the main page ( `index.php` ).
 
@@ -46,11 +46,9 @@ Then follow the instructions.
 
 * When your website is ready to be shown to the World Wide Web, put the `src` and `images` folders in the `public` folder.
 
-## Deployment
+## 5. Deployment
 
-I did three ways of deployment (2 locals and 1 global):
-
-### local with PHP: 
+### a) Local with PHP: 
 
 1. First start the PHP server in the repertory above `src` and `images` by typing in a shell:
  ``` bash
@@ -61,7 +59,7 @@ I did three ways of deployment (2 locals and 1 global):
 
 3. Finally, after finishing working, to stop the PHP server, do Ctrl-C.
 
-### local with Apache:
+### b) Local with Apache:
 
 1. First start the Apache server by typing in a shell one of the 3 following commands: 
  ``` bash
@@ -123,7 +121,7 @@ I did three ways of deployment (2 locals and 1 global):
  sudo systemctl stop apache2.service
  ```
 
-### global with Firebase:
+### c) Global with Firebase:
 
 1. After finishing working in local, to deploy the website in global on Firebase, type:
  ``` bash
@@ -136,7 +134,7 @@ I did three ways of deployment (2 locals and 1 global):
 
 NB: If your work hasn't changed, you don't need to do the first step the next time you want to see your website. 
 
-## Contributing
+## 6. Contributing
 
 Any contributions or even suggestions are **greatly appreciated**. To contribute, do the following:
 
@@ -146,7 +144,7 @@ Any contributions or even suggestions are **greatly appreciated**. To contribute
 4. Push to the Branch ( `git push origin Suggestions/AmazingSuggestion` )
 5. Open a Pull Request
 
-## Authors and acknowledgment
+## 7. Authors and acknowledgment
 
 * Author:
      - Mohamed Abdelkoddous - mohamed.abdelkoddous@metadot.com
